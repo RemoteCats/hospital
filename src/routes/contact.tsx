@@ -10,7 +10,6 @@ import {
   Mail,
   MapPin,
   MessageSquare,
-  Phone,
   ShieldCheck,
   Train,
 } from "lucide-react";
@@ -45,17 +44,10 @@ export const Route = createFileRoute("/contact")({
 
 const channels = [
   {
-    icon: Phone,
-    title: "Call us",
-    lines: ["+30-21-1234-7377", "Emergency desk, 24 hours"],
-    href: "tel:+302111234737",
-    action: "Call now",
-  },
-  {
     icon: Mail,
     title: "Email us",
-    lines: ["care@lifewellathens.gr", "Replied within one working day"],
-    href: "mailto:care@lifewellathens.gr",
+    lines: ["contact@lifewellmedicalcenter.com", "Replied within one working day"],
+    href: "mailto:contact@lifewellmedicalcenter.com",
     action: "Write to us",
   },
   {
@@ -356,11 +348,11 @@ function ContactPage() {
                     <h3 className="relative text-lg">Need an answer now?</h3>
                     <p className="relative mt-3 text-sm leading-relaxed text-primary-foreground/85">
                       Open the chat in the bottom-right corner and a member of staff will answer live
-                      during clinic hours. Out of hours, call the emergency desk.
+                      during clinic hours. You can also send your enquiry using the form below.
                     </p>
-                    <a href="tel:+302111234737" className="btn-glass-light relative mt-6 w-full">
-                      <Phone className="h-4 w-4" />
-                      Call the desk
+                    <a href="#enquiry" className="btn-glass-light relative mt-6 w-full">
+                      Send an enquiry
+                      <ArrowRight className="h-4 w-4" />
                     </a>
                   </TiltCard>
                 </Reveal>

@@ -6,7 +6,6 @@ import {
   ClipboardList,
   Clock,
   MessageSquare,
-  Phone,
   Stethoscope,
 } from "lucide-react";
 
@@ -177,10 +176,10 @@ function ServicesPage() {
                           Ask about {s.title.toLowerCase()}
                           <ArrowRight className="h-4 w-4" />
                         </Link>
-                        <a href="tel:+302111234737" className="btn-glass-ghost">
-                          <Phone className="h-4 w-4" />
-                          Call the desk
-                        </a>
+                        <Link to="/contact" className="btn-glass-ghost">
+                          Send an enquiry
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
                       </div>
                     </Reveal>
                   </div>
@@ -252,10 +251,10 @@ function ServicesPage() {
                   </p>
                 </div>
                 <div className="flex shrink-0 flex-wrap gap-3">
-                  <a href="tel:+302111234737" className="btn-glass-light px-8 py-4">
-                    <Phone className="h-4 w-4" />
-                    +30-21-1234-7377
-                  </a>
+                  <Link to="/contact" className="btn-glass-light px-8 py-4">
+                    Send an enquiry
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
                   <Link to="/contact" className="btn-glass-light px-8 py-4">
                     Message us
                     <ArrowRight className="h-4 w-4" />

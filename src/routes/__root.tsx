@@ -12,6 +12,7 @@ import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { images } from "@/data/images";
 import { Toaster } from "@/components/ui/sonner";
 import { loadPublicConfig, setPublicConfig } from "@/lib/public-config";
 
@@ -87,7 +88,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Immediate care, diagnostics, occupational health and paediatrics in Athens.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: images.logo },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: images.logo },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -100,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: images.logo, type: "image/png" },
     ],
   }),
 

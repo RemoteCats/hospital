@@ -202,10 +202,10 @@ function MedicalFlightPage() {
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <a href="tel:+302111234737" className="btn-glass">
-                    <Phone className="h-4 w-4" />
-                    Flight desk, 24 hours
-                  </a>
+                  <Link to="/contact" hash="enquiry" className="btn-glass">
+                    Send the case details
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
                   <Link to="/contact" hash="enquiry" className="btn-glass-ghost">
                     Send the case details
                     <ArrowRight className="h-4 w-4" />
@@ -383,10 +383,10 @@ function MedicalFlightPage() {
                     Clinical urgency is never held up while funding is sorted out.
                   </p>
                   <div className="mt-7 flex flex-wrap gap-3">
-                    <a href="tel:+302111234737" className="btn-glass-light">
-                      <Phone className="h-4 w-4" />
-                      Call the desk
-                    </a>
+                    <Link to="/contact" hash="enquiry" className="btn-glass-light">
+                      Send an enquiry
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
                   </div>
                 </div>
               </div>
