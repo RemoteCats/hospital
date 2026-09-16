@@ -4,7 +4,7 @@ import {
   CalendarDays,
   ChevronRight,
   MapPin,
-  Phone,
+  MessageSquare,
   Stethoscope,
   Clock,
   ShieldCheck,
@@ -22,7 +22,7 @@ const quickLinks = [
   { label: "About the hospital", icon: CalendarDays, to: "/about" as const },
   { label: "Our specialties", icon: Stethoscope, to: "/services" as const },
   { label: "Find us in Athens", icon: MapPin, to: "/contact" as const },
-  { label: "Emergency contact", icon: Phone, to: "/contact" as const },
+  { label: "Contact the center", icon: MessageSquare, to: "/contact" as const },
 ];
 
 export function SafeToComeIn() {
@@ -327,8 +327,8 @@ export function SiteFooter() {
               Modern, compassionate healthcare for every stage of life: emergency care,
               diagnostics, surgery, maternity and paediatrics, all in one building in Athens.
             </p>
-            <a href="tel:+302111234737" className="btn-glass-light mt-7 w-full sm:w-auto">
-              Call the emergency desk
+            <a href="/contact#enquiry" className="btn-glass-light mt-7 w-full sm:w-auto">
+              Send an enquiry
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -359,16 +359,10 @@ export function SiteFooter() {
             </p>
             <div className="mt-5 space-y-3 text-sm text-primary-foreground/80">
               <a
-                href="tel:+302111234737"
+                href="mailto:contact@lifewellmedicalcenter.com"
                 className="flex items-center gap-3 transition-colors duration-300 hover:text-primary-foreground"
               >
-                <Phone className="h-4 w-4 shrink-0" /> +30-21-1234-7377
-              </a>
-              <a
-                href="mailto:care@lifewellathens.gr"
-                className="flex items-center gap-3 transition-colors duration-300 hover:text-primary-foreground"
-              >
-                <Mail className="h-4 w-4 shrink-0" /> care@lifewellathens.gr
+                <Mail className="h-4 w-4 shrink-0" /> contact@lifewellmedicalcenter.com
               </a>
               <p className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 shrink-0" /> Athens, Greece
